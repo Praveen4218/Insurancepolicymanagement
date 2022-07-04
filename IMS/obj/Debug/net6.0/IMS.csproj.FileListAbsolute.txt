@@ -1,0 +1,12 @@
+E:\Mrunlucky\Insurance\IMS\bin\Debug\net6.0\IMS.deps.json
+E:\Mrunlucky\Insurance\IMS\bin\Debug\net6.0\IMS.dll
+E:\Mrunlucky\Insurance\IMS\bin\Debug\net6.0\ref\IMS.dll
+E:\Mrunlucky\Insurance\IMS\bin\Debug\net6.0\IMS.pdb
+E:\Mrunlucky\Insurance\IMS\obj\Debug\net6.0\IMS.csproj.AssemblyReference.cache
+E:\Mrunlucky\Insurance\IMS\obj\Debug\net6.0\IMS.GeneratedMSBuildEditorConfig.editorconfig
+E:\Mrunlucky\Insurance\IMS\obj\Debug\net6.0\IMS.AssemblyInfoInputs.cache
+E:\Mrunlucky\Insurance\IMS\obj\Debug\net6.0\IMS.AssemblyInfo.cs
+E:\Mrunlucky\Insurance\IMS\obj\Debug\net6.0\IMS.csproj.CoreCompileInputs.cache
+E:\Mrunlucky\Insurance\IMS\obj\Debug\net6.0\IMS.dll
+E:\Mrunlucky\Insurance\IMS\obj\Debug\net6.0\ref\IMS.dll
+E:\Mrunlucky\Insurance\IMS\obj\Debug\net6.0\IMS.pdb

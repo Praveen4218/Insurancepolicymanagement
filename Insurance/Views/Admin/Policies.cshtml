@@ -1,0 +1,54 @@
+﻿
+
+
+
+@{
+    Layout = "_Layout1";
+}
+ <style>
+          .bge{
+    background: url("https://wallpaperboat.com/wp-content/uploads/2020/12/02/62556/light-color-12.jpg");
+background-size: cover;
+  }
+      </style>
+      <br>
+      <br>
+      <br >
+ <div class="bge" style="width: 100%; height: 650px;">
+     <br >
+
+
+@ViewData["Approve"]
+<div class="row" style="margin-left:8%;margin-right:2%">
+ 
+
+    
+
+@foreach(var item in Model)
+{
+    
+<div class="col-sm-4" >
+    <div class="card">
+        <br>
+     <b style="margin-left:100px" > @item.Customer.CustName</b><br />
+   <div class="container" style="margin-left:60px">
+    <div>PolicyName: @item.Policy.Pname<br>
+    Category: @item.Policy.Pcategory<br>
+   </div>
+  
+    <br>
+    <form method="post">
+    <button type="submit" asp-route-Customerid=@item.Customer.CustId asp-route-Pid=@item.Policy.Pid asp-route-button="Approved" value="Approved" name="Button" class="btn btn-success">Approve</button>
+    <button type="submit" asp-route-Customerid=@item.Customer.CustId asp-route-Pid=@item.Policy.Pid asp-route-button="Declined" style="margin-left:50px" value="Declined" name="Button" class="btn btn-danger">Decline</button><br>
+ </form>   
+   
+</div> 
+</div> 
+    </div>
+    <br />
+}
+<br />
+
+</div>
+</div>
+

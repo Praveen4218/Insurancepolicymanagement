@@ -1,0 +1,62 @@
+﻿
+
+
+
+@model List<IMS.Customer>
+ <style>
+  .box{
+  width: 450px;
+  background: rgba(0, 0, 0, 0);
+  padding: 40px;
+  text-align: center;
+  margin: auto;
+  margin-top: 5;
+  color: black;
+  font-family: 'Century Gothic',sans-serif;
+}
+
+ .bge{
+    background: url("https://wallpaperboat.com/wp-content/uploads/2020/12/02/62556/light-color-12.jpg");
+background-size: cover;
+  }
+  
+ </style>
+ <div class="bge" style="width: 100%; height: 700px;">
+
+   <div class="box">
+       
+@foreach(var item in Model)
+{
+ 
+    <br><br>
+    <br>
+    <b style="margin-left:30px;" >Name: @item.CustName<br /></b>
+    <div class="container">
+    email:@item.Mail
+   <br>
+   <br>
+
+ nominee:@item.Nominee<br>
+<br>
+    mobileno:@item.Mobileno<br>
+    <br>
+    dob:@item.Dob<br>
+    <br>
+    address:@item.Address<br>
+    <br>
+
+    </div>
+    
+    <br>
+    
+<a type=button class=btn-primary  asp-action =edit asp-route-name=@item.CustId>Edit Details </a>
+}
+
+@*<a type=button class=btn-primary  asp-action=change password >change password </a>*@
+
+
+</div>
+
+
+
+

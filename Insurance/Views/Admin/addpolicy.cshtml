@@ -1,0 +1,58 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model IMS.Policy
+@{
+    Layout = "_Layout1";
+}
+
+
+      <style>
+          .bge{
+    background: url("https://wallpaperboat.com/wp-content/uploads/2020/12/02/62556/light-color-12.jpg");
+background-size: cover;
+  }
+      </style>
+      <br>
+      <br>
+      <br >
+
+      <div class="bge" style="width: 100%; height: 650px;">
+      
+          <br >
+
+          <br >
+ <form style="width:350px;margin-left:40%" method="post">  
+      @ViewData["a"]
+      
+    <h1>Add New Policy </h1>
+    
+    <hr>
+  
+    <label><b>Policy Name</b></label>
+    <input style="width:350px" type="text" asp-for="Pname"required class="form-control">
+
+    <label><b> Category </b> </label> 
+    <input style="width:350px" type="text" asp-for="Pcategory"required class="form-control" />
+
+    <label><b>Total Amount</b> </label> 
+    <input style="width:350px" type="text" asp-for="Totalamount"required class="form-control" />
+    
+    <label><b>Premium</b></label>
+    <input style="width:350px"type="text" asp-for="Premium"required class="form-control">
+    
+    <label><b>Tenure</b></label>
+    <input style="width:350px"type="text" asp-for="Tenure"required class="form-control">
+
+    
+
+    <button type="submit"   class="btn btn-success" style="text-align:center"> Submit</button> 
+
+    <a type="button" class="btn btn-info" asp-action = "viewpolicy">View Policies  </a> 
+    
+    </form>
+    
+
+    </div>

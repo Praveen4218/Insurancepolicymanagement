@@ -1,0 +1,41 @@
+﻿
+<br>
+<style>
+     .bge{
+    background: url("https://wallpaperboat.com/wp-content/uploads/2020/12/02/62556/light-color-12.jpg");
+background-size: cover;
+</style>
+
+<div class="bge" style="width: 100%; height: 650px;">
+<br >
+@ViewData["Approve"]
+<div class="row" style="margin-left:8%;margin-right:2%">
+ 
+
+    
+
+@foreach(var item in Model)
+{
+    
+<div class="col-sm-4" >
+    <div class="card">
+        <br>
+     
+   <div class="container" style="margin-left:50px">
+    <div>PolicyName: @item.Policy.Pname<br>
+    Category: @item.Policy.Pcategory<br>
+    Status:@item.appliedpolicy.Status
+   </div>
+   
+    <br>
+     
+   
+</div> 
+</div> 
+    </div>
+    <br />
+}
+<br />
+
+</div>
+</div>

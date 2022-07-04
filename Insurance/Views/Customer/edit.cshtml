@@ -1,0 +1,54 @@
+﻿<style>
+     .bge{
+    background: url("https://wallpaperboat.com/wp-content/uploads/2020/12/02/62556/light-color-12.jpg");
+background-size: cover;
+  }
+</style>
+<div class="bge" style="width: 100%; height: 700px;">
+@model IMS.Customer
+
+@*<article style="background-color:peachpuff;background-size:auto"  >       
+         
+  <div  style="width:500px; margin-left:300px">*@
+ <form  style="width:450px;margin-left:40%" method="post">  
+      @ViewData["a"]
+      
+    <h1>Edit Customer Details</h1>
+    
+    <hr>
+    <label><b>Customer Id</b></label>
+    <input  style="width:350px" type="text" asp-for="CustId" class="form-control">
+
+    <label><b>Customer Name</b></label>
+    <input  style="width:350px" type="text" asp-for="CustName" class="form-control">
+
+    <label><b> Nominee Name </b> </label> 
+    <input  style="width:350px"  type="text" asp-for="Nominee" class="form-control" />
+
+    <label><b>Date Of Birth</b> </label> 
+    <input  style="width:350px"  type="text" asp-for="Dob" class="form-control" />
+    
+    <label><b>Email</b></label>
+    <input   style="width:350px"type="text" asp-for="Mail" class="form-control">
+    
+    <label><b>Mobile Number</b></label>
+    <input  style="width:350px" type="text" asp-for="Mobileno" class="form-control">
+
+    <label> <b>Address</b></label>
+    <input  style="width:350px" type="text" asp-for="Address" class="form-control">
+     <label><b>Gender</b></label>
+    <input  style="width:350px" type="text" asp-for="Gender" class="form-control">
+
+    <label><b>Pwd</b></label>
+    <input  style="width:350px" type="text" asp-for="Pwd" class="form-control">
+
+
+    <button type="submit"   class="btn btn-success" style="text-align:center"> Update</button> 
+
+    <a type="button" class="btn btn-success" asp-action = "home">Go to home page </a> 
+   
+    </form>
+ 
+
+
+    </div>

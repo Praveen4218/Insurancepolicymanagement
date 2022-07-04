@@ -1,0 +1,37 @@
+﻿<h1>Welcome to mphasis</h1>
+
+<style>
+    .container{
+    margin-left:30px;
+    }
+</style>
+
+    @model List<IMS.Policy>
+
+
+
+
+<br >
+
+<div style="margin-left:10%;margin-right:2%">
+@foreach(var item in Model)
+{
+       
+        <div class="card">
+   
+    <b style="margin-left:30px" >pid: @item.Pid<br /></b>
+    <div class="container">
+    policy name:@item.Pname
+    <br>
+   total amount:@item.Totalamount
+
+    <a asp-action="Policy" asp-route-pid=@item.Pid  class="btn btn-info" style="margin-left:600px" >view details</a> <br>
+    premium:@item.Premium
+    
+    </div>
+    </div>
+    <br >
+}
+</div>
+
+

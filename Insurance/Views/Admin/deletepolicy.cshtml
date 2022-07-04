@@ -1,0 +1,56 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model List<IMS.Policy> 
+
+@{
+    Layout = "_Layout1";
+}
+
+ 
+   
+<html>
+<body>
+    <br />
+    
+    
+  @if (Model != null)
+  {
+            
+        <div style="margin-left:5%;margin-right:2%">
+@foreach(var item in Model)
+{
+    
+    
+   
+
+  <div class="card">
+     <div style="margin-left:10px;"><b>Policy: @item.Pname</b></div>
+    <div class="container">
+     <div>Premium:  @item.Premium</div>
+      <div>Tenure(years):  @item.Tenure</div>
+       <div>Totalamount:  @item.Totalamount</div>
+        <div>Category:  @item.Pcategory</div>
+        
+
+
+     
+     <br>
+    </div>
+    </div>
+    <form method="post">
+<button type="Submit"  style="width:400px;margin-left:200px;" asp-route-Pid=@item.Pid class="btn btn-info">delete policy</button>
+</form>
+}
+
+</div>
+
+  }
+  </body>
+  @ViewData["a"]
+  </html>
+  
+
+

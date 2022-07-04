@@ -1,0 +1,94 @@
+﻿
+
+<html>
+<head>
+    <title>Insurance Policy Management</title>
+   
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+<link rel="stylesheet"href="~/css/StyleSheet.css" />
+
+    <style>
+        
+
+ul{
+float:left;
+margin-top:20px;
+margin-left:60%;
+}
+
+ul li{
+display:inline-block;
+list-style-type:none;
+float:left;
+margin-left:5px;
+
+}
+
+ul li a{
+text-decoration:none;
+color:#01121c;
+padding:5px 10px 5px 10px;
+border-radius:5px;
+
+
+}
+
+ul li a:hover{
+background-color:#80c7f2;
+color:white;
+transition:0.5s ease;
+}
+
+ .text{
+    font-size: 60px;
+    color:darkred;
+    font-family: sans-serif;
+    text-shadow: 0px 15px 12px #000;
+    height:10px;
+}
+    </style>
+    
+</head>
+
+
+
+<body>
+    
+    <header >
+        
+     
+     
+    
+  
+         <div class="text">
+
+        Insurance Policy Management
+  </div>
+        
+          
+                <ul><li>
+              <li>  <a  aria-current="page" asp-action="Home">Home</a> </li>
+               <li> <a  asp-action="addpolicy">Add Policies</a></li>
+             <li>   <a  asp-action="answer">Answer Messages</a></li>
+             <li>   <a  asp-action="policies">Policy Approval</a></li>
+            <li>   @if (Context.Session.GetString("user") == null)
+                {
+                <a  asp-action="Signin" style="margin-left:10px">Signin/Signup</a>
+                 }
+                else
+                {
+                <a  asp-action="Signout" style="margin-left:10px">Signout</a>
+                 }</li>
+                 </ul>
+
+
+
+       
+        
+
+   
+        @RenderBody()
+</body>
+
+
+</html>

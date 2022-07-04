@@ -1,0 +1,9 @@
+﻿
+@model IMS.Question
+<form method="post">
+ <label><b> Comment </b> </label> 
+    <input  type="text" asp-for="Question1" style="height:100px" class="form-control" />
+     <button type="submit"   class="btn btn-success" style="text-align:center"> submit</button>
+</form>
+ <li>  <a  asp-action="viewmessage">view reply</a></li>
+@ViewData["a"]

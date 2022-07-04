@@ -1,0 +1,51 @@
+﻿
+@{
+    Layout = "_Layout1";
+}
+<html>
+    <head>
+        <style>
+            .box{
+
+  width: 450px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  text-align: center;
+  margin: auto;
+  margin-top: 1%;
+  color: white;
+  font-family: 'Century Gothic',sans-serif;
+}
+.bge{
+    background: url("https://wallpaperboat.com/wp-content/uploads/2020/12/02/62556/light-color-12.jpg");
+background-size: cover;
+  }
+        </style>
+    </head>
+    <body> 
+        <br>
+        <br >
+        <br >
+        <br >
+        <div class="bge" style="width: 100%; height: 650px;"> 
+             <br>
+              <br>
+               <br>
+              <br>
+
+
+        <div class="box">
+      <b>  <div><b>Total Number of Customers  :</b>@ViewData["b"]</div><br>
+      <br >
+      
+<div>Total Number of Policies:@ViewData["a"]</div><br > <a type="button" class="btn btn-info" asp-action = "viewpolicy">View All Policies  </a><br>
+<br >
+<br >
+
+<div>Pending Approval:@ViewData["c"]</div><br ><a type="button" class="btn btn-info" asp-action="Policies">Approve Policies</a></b>
+</div>
+</div>
+    </body>
+</html>
+
+
